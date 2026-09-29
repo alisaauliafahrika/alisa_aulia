@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #25344d;
+    line-height: 1.7;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e8f2fb;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #65aee8;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #42536c;
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #62afea;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 650px;
+    max-width: 1150px;
+    margin: auto;
+    padding: 80px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.small-title {
+    color: #65aee8;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.15;
+    color: #25344d;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #69b5ee;
+}
+
+.hero p:not(.small-title) {
+    max-width: 570px;
+    color: #697b91;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    background: #72b9ed;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(114, 185, 237, 0.25);
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background: #59a9e3;
+}
+
+.hero-image {
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #dff2ff;
+    border: 15px solid #f0f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-icon {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #72b9ed;
+    font-size: 100px;
+    font-weight: 700;
+    box-shadow: 0 15px 40px rgba(80, 150, 200, 0.12);
+}
+
+
+/* ================= SECTION ================= */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 90px 25px;
+}
+
+.light-section {
+    max-width: none;
+    background: #f4faff;
+    padding-left: calc((100% - 1100px) / 2);
+    padding-right: calc((100% - 1100px) / 2);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title p {
+    color: #68afe6;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #25344d;
+    margin-top: 5px;
+}
+
+
+/* ================= BIODATA ================= */
+
+.biodata-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.biodata-card {
+    background: white;
+    border: 1px solid #e4f1fa;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(50, 120, 170, 0.06);
+}
+
+.info {
+    padding: 15px 0;
+    border-bottom: 1px solid #edf4f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.info:last-child {
+    border-bottom: none;
+}
+
+.info span {
+    color: #8a9bad;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.info strong {
+    color: #30445e;
+    font-size: 15px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    background: #e9f7ff;
+    padding: 90px 25px;
+}
+
+.about-content {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-decoration {
+    height: 300px;
+    background: #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 50px rgba(80, 150, 200, 0.1);
+}
+
+.about-decoration span {
+    color: #72b9ed;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.about h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color: #65afe7;
+}
+
+.about p:not(.small-title) {
+    color: #64778d;
+    margin-bottom: 15px;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.gallery-item {
+    height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #dff2ff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.07);
+}
+
+
+/* ================= TIMELINE ================= */
+
+.timeline {
+    max-width: 850px;
+    margin: auto;
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 110px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #bde4fa;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    gap: 40px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.year {
+    color: #62afe8;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.timeline-content {
+    background: white;
+    padding: 22px 28px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(70, 130, 180, 0.07);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #70b9ea;
+    left: -46px;
+    top: 29px;
+}
+
+.timeline-content h3 {
+    color: #30445e;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    color: #8291a2;
+    font-size: 13px;
+}
+
+
+/* ================= ORGANISASI ================= */
+
+.organization-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 40px;
+    background: #f4faff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid #deeffa;
+}
+
+.organization-icon {
+    min-width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: #cfeeff;
+    color: #4fa6df;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.organization-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.organization-card p {
+    color: #718399;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.badge,
+.achievement-badge {
+    display: inline-block;
+    background: #d9f1ff;
+    color: #4a9bd2;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+
+/* ================= KELEBIHAN ================= */
+
+.strength-section {
+    padding: 90px 25px;
+    background: #f4faff;
+}
+
+.strength-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.strength-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(70, 130, 180, 0.06);
+    transition: 0.3s;
+}
+
+.strength-card:hover {
+    transform: translateY(-7px);
+}
+
+.number {
+    color: #83c3ef;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.strength-card h3 {
+    margin-bottom: 10px;
+}
+
+.strength-card p {
+    color: #7a8a9d;
+    font-size: 14px;
+}
+
+
+/* ================= PRESTASI ================= */
+
+.achievement-section {
+    background: white;
+}
+
+.achievement-card {
+    max-width: 750px;
+    margin: auto;
+    background: #eaf7ff;
+    padding: 40px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.trophy {
+    font-size: 65px;
+}
+
+.achievement-card h3 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.achievement-card p {
+    color: #718398;
+    margin-bottom: 15px;
+}
+
+.achievement-badge {
+    background: #75bced;
+    color: white;
+    padding: 7px 18px;
+}
+
+
+/* ================= SKILL ================= */
+
+.skill-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.skill-header span:last-child {
+    color: #64afe7;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 9px;
+    background: #dcecf6;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #73b9ea;
+    border-radius: 20px;
+}
+
+.progress-90 {
+    width: 90%;
+}
+
+.progress-85 {
+    width: 85%;
+}
+
+.progress-95 {
+    width: 95%;
+}
+
+
+/* ================= PORTFOLIO ================= */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.portfolio-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #e4f0f7;
+    box-shadow: 0 10px 30px rgba(70, 130, 180, 0.06);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-info {
+    padding: 20px 25px;
+}
+
+.portfolio-info span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #68afe6;
+    font-weight: 600;
+}
+
+.portfolio-info h3 {
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #dff3ff;
+    text-align: center;
+    padding: 55px 25px;
+}
+
+footer h2 {
+    color: #38526d;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #7890a5;
+    font-size: 13px;
+}
+
+.footer-line {
+    width: 60px;
+    height: 2px;
+    background: #75bbed;
+    margin: 25px auto;
+}
+
+.copyright {
+    font-size: 11px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-image {
+        margin-bottom: 20px;
+    }
+
+    .profile-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .profile-icon {
+        width: 170px;
+        height: 170px;
+        font-size: 75px;
+    }
+
+    .biodata-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .strength-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .light-section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 65px 18px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 300px;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item {
+        display: block;
+    }
+
+    .year {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .timeline-content::before {
+        display: none;
+    }
+
+    .organization-card,
+    .achievement-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portfolio-card img {
+        height: 220px;
+    }
+}
